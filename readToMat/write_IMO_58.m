@@ -14,7 +14,7 @@ zeta = [];
 flon = ncread(nc_file(1).name,'lon');
 flat = ncread(nc_file(1).name,'lat');
 
-% 需要优化经纬度
+% write the 16 points around the hot point
 %sloc = [115.44 , -32.03];
 sloc = [115.3855 , -31.9893];
 IDX=knnsearch([flon,flat],sloc,'k',16)
